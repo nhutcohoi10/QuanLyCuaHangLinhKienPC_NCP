@@ -1,0 +1,9 @@
+C:\Users\Minh Nhut\Documents\QuanLyCuaHangLinhKienPC_NCP-master\QuanLyCuaHangLinhKienPC_NCP (Dev_Express)\DAO\obj\Debug\DAO.csprojAssemblyReference.cache
+C:\Users\Minh Nhut\Documents\QuanLyCuaHangLinhKienPC_NCP-master\QuanLyCuaHangLinhKienPC_NCP (Dev_Express)\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
+C:\Users\Minh Nhut\Documents\QuanLyCuaHangLinhKienPC_NCP-master\QuanLyCuaHangLinhKienPC_NCP (Dev_Express)\DAO\bin\Debug\DAO.dll
+C:\Users\Minh Nhut\Documents\QuanLyCuaHangLinhKienPC_NCP-master\QuanLyCuaHangLinhKienPC_NCP (Dev_Express)\DAO\bin\Debug\DAO.pdb
+C:\Users\Minh Nhut\Documents\QuanLyCuaHangLinhKienPC_NCP-master\QuanLyCuaHangLinhKienPC_NCP (Dev_Express)\DAO\bin\Debug\DTO.dll
+C:\Users\Minh Nhut\Documents\QuanLyCuaHangLinhKienPC_NCP-master\QuanLyCuaHangLinhKienPC_NCP (Dev_Express)\DAO\bin\Debug\DTO.pdb
+C:\Users\Minh Nhut\Documents\QuanLyCuaHangLinhKienPC_NCP-master\QuanLyCuaHangLinhKienPC_NCP (Dev_Express)\DAO\obj\Debug\DAO.csproj.CopyComplete
+C:\Users\Minh Nhut\Documents\QuanLyCuaHangLinhKienPC_NCP-master\QuanLyCuaHangLinhKienPC_NCP (Dev_Express)\DAO\obj\Debug\DAO.dll
+C:\Users\Minh Nhut\Documents\QuanLyCuaHangLinhKienPC_NCP-master\QuanLyCuaHangLinhKienPC_NCP (Dev_Express)\DAO\obj\Debug\DAO.pdb

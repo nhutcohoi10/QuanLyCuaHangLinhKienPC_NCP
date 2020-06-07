@@ -1,0 +1,6 @@
+C:\Users\Minh Nhut\Documents\QuanLyCuaHangLinhKienPC_NCP-master\QuanLyCuaHangLinhKienPC_NCP (Dev_Express)\DTO\bin\Debug\DTO.dll
+C:\Users\Minh Nhut\Documents\QuanLyCuaHangLinhKienPC_NCP-master\QuanLyCuaHangLinhKienPC_NCP (Dev_Express)\DTO\bin\Debug\DTO.pdb
+C:\Users\Minh Nhut\Documents\QuanLyCuaHangLinhKienPC_NCP-master\QuanLyCuaHangLinhKienPC_NCP (Dev_Express)\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+C:\Users\Minh Nhut\Documents\QuanLyCuaHangLinhKienPC_NCP-master\QuanLyCuaHangLinhKienPC_NCP (Dev_Express)\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\Minh Nhut\Documents\QuanLyCuaHangLinhKienPC_NCP-master\QuanLyCuaHangLinhKienPC_NCP (Dev_Express)\DTO\obj\Debug\DTO.dll
+C:\Users\Minh Nhut\Documents\QuanLyCuaHangLinhKienPC_NCP-master\QuanLyCuaHangLinhKienPC_NCP (Dev_Express)\DTO\obj\Debug\DTO.pdb

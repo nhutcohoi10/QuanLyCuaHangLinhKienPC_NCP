@@ -53,22 +53,10 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.lblDanhMucSanPham = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.dgvDanhSachSP = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.colMaSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colTenSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colLoai = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colNgayNhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colBaoHanh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colXuatXu = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colSoLuongTon = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colGiaBan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colGiaGoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colKhuyenMai = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colMaNCC = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.panelThongTinSanPham = new System.Windows.Forms.Panel();
+            this.panel = new System.Windows.Forms.Panel();
             this.numericKhuyenMai = new DevExpress.XtraEditors.SpinEdit();
             this.numericSoLuong = new DevExpress.XtraEditors.SpinEdit();
             this.cboXuatXu = new System.Windows.Forms.ComboBox();
-            this.cboBaoHanh = new System.Windows.Forms.ComboBox();
             this.lblXuatXu = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.lblBaoHanh = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.cboLoai = new System.Windows.Forms.ComboBox();
@@ -93,15 +81,31 @@
             this.btnNhapHang = new Bunifu.Framework.UI.BunifuThinButton2();
             this.txtTimKiemNhanh = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.lblTimKiemNhanh = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.colMaSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colTenSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colLoai = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colGiaGoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colGiaBan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colSoLuongTon = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colBaoHanh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colKhuyenMai = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colMaNCC = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colXuatXu = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colNgayNhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dtpBaoHanh = new DevExpress.XtraEditors.DateEdit();
+            this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.txtMaNCC = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.panelDanhMucSP.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDanhSachSP)).BeginInit();
-            this.panelThongTinSanPham.SuspendLayout();
+            this.panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericKhuyenMai.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericSoLuong.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtpNgayNhap.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtpNgayNhap.Properties)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtpBaoHanh.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtpBaoHanh.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -113,11 +117,11 @@
             // 
             this.lblBannerSanPham.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblBannerSanPham.AutoSize = true;
-            this.lblBannerSanPham.Font = new System.Drawing.Font("SVN-Beast", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBannerSanPham.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBannerSanPham.ForeColor = System.Drawing.Color.White;
             this.lblBannerSanPham.Location = new System.Drawing.Point(570, 9);
             this.lblBannerSanPham.Name = "lblBannerSanPham";
-            this.lblBannerSanPham.Size = new System.Drawing.Size(214, 51);
+            this.lblBannerSanPham.Size = new System.Drawing.Size(221, 42);
             this.lblBannerSanPham.TabIndex = 5;
             this.lblBannerSanPham.Text = "SẢN PHẨM";
             // 
@@ -134,7 +138,7 @@
             // lvwDanhMucSanPham
             // 
             this.lvwDanhMucSanPham.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
-            this.lvwDanhMucSanPham.Font = new System.Drawing.Font("SVN-Beast", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lvwDanhMucSanPham.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lvwDanhMucSanPham.ForeColor = System.Drawing.Color.White;
             this.lvwDanhMucSanPham.HideSelection = false;
             this.lvwDanhMucSanPham.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
@@ -170,11 +174,11 @@
             // lblDanhMucSanPham
             // 
             this.lblDanhMucSanPham.AutoSize = true;
-            this.lblDanhMucSanPham.Font = new System.Drawing.Font("SVN-Beast", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDanhMucSanPham.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDanhMucSanPham.ForeColor = System.Drawing.Color.White;
             this.lblDanhMucSanPham.Location = new System.Drawing.Point(7, 4);
             this.lblDanhMucSanPham.Name = "lblDanhMucSanPham";
-            this.lblDanhMucSanPham.Size = new System.Drawing.Size(161, 23);
+            this.lblDanhMucSanPham.Size = new System.Drawing.Size(159, 20);
             this.lblDanhMucSanPham.TabIndex = 0;
             this.lblDanhMucSanPham.Text = "Danh mục Sản phẩm";
             // 
@@ -182,7 +186,7 @@
             // 
             this.dgvDanhSachSP.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(54)))), ((int)(((byte)(66)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("SVN-Beast", 12F);
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
             this.dgvDanhSachSP.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvDanhSachSP.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
@@ -193,7 +197,7 @@
             this.dgvDanhSachSP.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(39)))), ((int)(((byte)(48)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("SVN-Beast", 12F);
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvDanhSachSP.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
@@ -202,17 +206,17 @@
             this.colMaSP,
             this.colTenSP,
             this.colLoai,
-            this.colNgayNhap,
-            this.colBaoHanh,
-            this.colXuatXu,
-            this.colSoLuongTon,
-            this.colGiaBan,
             this.colGiaGoc,
+            this.colGiaBan,
+            this.colSoLuongTon,
+            this.colBaoHanh,
             this.colKhuyenMai,
-            this.colMaNCC});
+            this.colMaNCC,
+            this.colXuatXu,
+            this.colNgayNhap});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("SVN-Beast", 12F);
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(200)))), ((int)(((byte)(150)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -233,106 +237,43 @@
             this.dgvDanhSachSP.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
             this.dgvDanhSachSP.Size = new System.Drawing.Size(1096, 300);
             this.dgvDanhSachSP.TabIndex = 24;
+            this.dgvDanhSachSP.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDanhSachSP_CellClick);
             // 
-            // colMaSP
+            // panel
             // 
-            this.colMaSP.HeaderText = "Mã SP";
-            this.colMaSP.Name = "colMaSP";
-            this.colMaSP.ReadOnly = true;
-            // 
-            // colTenSP
-            // 
-            this.colTenSP.HeaderText = "Tên SP";
-            this.colTenSP.Name = "colTenSP";
-            this.colTenSP.ReadOnly = true;
-            // 
-            // colLoai
-            // 
-            this.colLoai.HeaderText = "Loại";
-            this.colLoai.Name = "colLoai";
-            this.colLoai.ReadOnly = true;
-            // 
-            // colNgayNhap
-            // 
-            this.colNgayNhap.HeaderText = "Ngày nhập";
-            this.colNgayNhap.Name = "colNgayNhap";
-            this.colNgayNhap.ReadOnly = true;
-            // 
-            // colBaoHanh
-            // 
-            this.colBaoHanh.HeaderText = "Bảo hành";
-            this.colBaoHanh.Name = "colBaoHanh";
-            this.colBaoHanh.ReadOnly = true;
-            // 
-            // colXuatXu
-            // 
-            this.colXuatXu.HeaderText = "Xuất xứ";
-            this.colXuatXu.Name = "colXuatXu";
-            this.colXuatXu.ReadOnly = true;
-            // 
-            // colSoLuongTon
-            // 
-            this.colSoLuongTon.HeaderText = "SL tồn";
-            this.colSoLuongTon.Name = "colSoLuongTon";
-            this.colSoLuongTon.ReadOnly = true;
-            // 
-            // colGiaBan
-            // 
-            this.colGiaBan.HeaderText = "Giá bán";
-            this.colGiaBan.Name = "colGiaBan";
-            this.colGiaBan.ReadOnly = true;
-            // 
-            // colGiaGoc
-            // 
-            this.colGiaGoc.HeaderText = "Giá gốc";
-            this.colGiaGoc.Name = "colGiaGoc";
-            this.colGiaGoc.ReadOnly = true;
-            // 
-            // colKhuyenMai
-            // 
-            this.colKhuyenMai.HeaderText = "KM (%)";
-            this.colKhuyenMai.Name = "colKhuyenMai";
-            this.colKhuyenMai.ReadOnly = true;
-            // 
-            // colMaNCC
-            // 
-            this.colMaNCC.HeaderText = "Mã NCC";
-            this.colMaNCC.Name = "colMaNCC";
-            this.colMaNCC.ReadOnly = true;
-            // 
-            // panelThongTinSanPham
-            // 
-            this.panelThongTinSanPham.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.panelThongTinSanPham.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(54)))), ((int)(((byte)(66)))));
-            this.panelThongTinSanPham.Controls.Add(this.numericKhuyenMai);
-            this.panelThongTinSanPham.Controls.Add(this.numericSoLuong);
-            this.panelThongTinSanPham.Controls.Add(this.cboXuatXu);
-            this.panelThongTinSanPham.Controls.Add(this.cboBaoHanh);
-            this.panelThongTinSanPham.Controls.Add(this.lblXuatXu);
-            this.panelThongTinSanPham.Controls.Add(this.lblBaoHanh);
-            this.panelThongTinSanPham.Controls.Add(this.cboLoai);
-            this.panelThongTinSanPham.Controls.Add(this.bunifuCustomLabel3);
-            this.panelThongTinSanPham.Controls.Add(this.dtpNgayNhap);
-            this.panelThongTinSanPham.Controls.Add(this.bunifuCustomLabel2);
-            this.panelThongTinSanPham.Controls.Add(this.txtTenSP);
-            this.panelThongTinSanPham.Controls.Add(this.lblTenSP);
-            this.panelThongTinSanPham.Controls.Add(this.txtGiaBan);
-            this.panelThongTinSanPham.Controls.Add(this.txtGiaGoc);
-            this.panelThongTinSanPham.Controls.Add(this.lblGiaBan);
-            this.panelThongTinSanPham.Controls.Add(this.txtMaSP);
-            this.panelThongTinSanPham.Controls.Add(this.lblKhuyenMai);
-            this.panelThongTinSanPham.Controls.Add(this.lblGiaGoc);
-            this.panelThongTinSanPham.Controls.Add(this.lblSoLuong);
-            this.panelThongTinSanPham.Controls.Add(this.lblMaSP);
-            this.panelThongTinSanPham.Controls.Add(this.btnLuuCapNhat);
-            this.panelThongTinSanPham.Controls.Add(this.panel1);
-            this.panelThongTinSanPham.Controls.Add(this.btnCapNhat);
-            this.panelThongTinSanPham.Controls.Add(this.btnXoa);
-            this.panelThongTinSanPham.Controls.Add(this.btnNhapHang);
-            this.panelThongTinSanPham.Location = new System.Drawing.Point(186, 410);
-            this.panelThongTinSanPham.Name = "panelThongTinSanPham";
-            this.panelThongTinSanPham.Size = new System.Drawing.Size(1096, 296);
-            this.panelThongTinSanPham.TabIndex = 25;
+            this.panel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(54)))), ((int)(((byte)(66)))));
+            this.panel.Controls.Add(this.numericKhuyenMai);
+            this.panel.Controls.Add(this.numericSoLuong);
+            this.panel.Controls.Add(this.cboXuatXu);
+            this.panel.Controls.Add(this.lblXuatXu);
+            this.panel.Controls.Add(this.lblBaoHanh);
+            this.panel.Controls.Add(this.cboLoai);
+            this.panel.Controls.Add(this.bunifuCustomLabel3);
+            this.panel.Controls.Add(this.dtpBaoHanh);
+            this.panel.Controls.Add(this.dtpNgayNhap);
+            this.panel.Controls.Add(this.bunifuCustomLabel2);
+            this.panel.Controls.Add(this.txtTenSP);
+            this.panel.Controls.Add(this.lblTenSP);
+            this.panel.Controls.Add(this.txtGiaBan);
+            this.panel.Controls.Add(this.txtGiaGoc);
+            this.panel.Controls.Add(this.lblGiaBan);
+            this.panel.Controls.Add(this.txtMaNCC);
+            this.panel.Controls.Add(this.txtMaSP);
+            this.panel.Controls.Add(this.lblKhuyenMai);
+            this.panel.Controls.Add(this.lblGiaGoc);
+            this.panel.Controls.Add(this.bunifuCustomLabel1);
+            this.panel.Controls.Add(this.lblSoLuong);
+            this.panel.Controls.Add(this.lblMaSP);
+            this.panel.Controls.Add(this.btnLuuCapNhat);
+            this.panel.Controls.Add(this.panel1);
+            this.panel.Controls.Add(this.btnCapNhat);
+            this.panel.Controls.Add(this.btnXoa);
+            this.panel.Controls.Add(this.btnNhapHang);
+            this.panel.Location = new System.Drawing.Point(186, 410);
+            this.panel.Name = "panel";
+            this.panel.Size = new System.Drawing.Size(1096, 296);
+            this.panel.TabIndex = 25;
             // 
             // numericKhuyenMai
             // 
@@ -344,7 +285,7 @@
             this.numericKhuyenMai.Enabled = false;
             this.numericKhuyenMai.Location = new System.Drawing.Point(387, 174);
             this.numericKhuyenMai.Name = "numericKhuyenMai";
-            this.numericKhuyenMai.Properties.Appearance.Font = new System.Drawing.Font("SVN-Beast", 11.25F);
+            this.numericKhuyenMai.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             this.numericKhuyenMai.Properties.Appearance.Options.UseFont = true;
             this.numericKhuyenMai.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -355,7 +296,7 @@
             0,
             0,
             0});
-            this.numericKhuyenMai.Size = new System.Drawing.Size(85, 28);
+            this.numericKhuyenMai.Size = new System.Drawing.Size(85, 24);
             this.numericKhuyenMai.TabIndex = 16;
             // 
             // numericSoLuong
@@ -368,13 +309,13 @@
             this.numericSoLuong.Enabled = false;
             this.numericSoLuong.Location = new System.Drawing.Point(130, 119);
             this.numericSoLuong.Name = "numericSoLuong";
-            this.numericSoLuong.Properties.Appearance.Font = new System.Drawing.Font("SVN-Beast", 11.25F);
+            this.numericSoLuong.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             this.numericSoLuong.Properties.Appearance.Options.UseFont = true;
             this.numericSoLuong.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.numericSoLuong.Properties.IsFloatValue = false;
             this.numericSoLuong.Properties.Mask.EditMask = "N00";
-            this.numericSoLuong.Size = new System.Drawing.Size(85, 28);
+            this.numericSoLuong.Size = new System.Drawing.Size(85, 24);
             this.numericSoLuong.TabIndex = 16;
             // 
             // cboXuatXu
@@ -382,7 +323,7 @@
             this.cboXuatXu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
             this.cboXuatXu.Enabled = false;
             this.cboXuatXu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cboXuatXu.Font = new System.Drawing.Font("SVN-Beast", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboXuatXu.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboXuatXu.ForeColor = System.Drawing.Color.White;
             this.cboXuatXu.FormattingEnabled = true;
             this.cboXuatXu.Items.AddRange(new object[] {
@@ -391,45 +332,28 @@
             "Chăm Sóc Khách Hàng"});
             this.cboXuatXu.Location = new System.Drawing.Point(670, 174);
             this.cboXuatXu.Name = "cboXuatXu";
-            this.cboXuatXu.Size = new System.Drawing.Size(138, 30);
+            this.cboXuatXu.Size = new System.Drawing.Size(138, 26);
             this.cboXuatXu.TabIndex = 15;
-            // 
-            // cboBaoHanh
-            // 
-            this.cboBaoHanh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
-            this.cboBaoHanh.Enabled = false;
-            this.cboBaoHanh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cboBaoHanh.Font = new System.Drawing.Font("SVN-Beast", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboBaoHanh.ForeColor = System.Drawing.Color.White;
-            this.cboBaoHanh.FormattingEnabled = true;
-            this.cboBaoHanh.Items.AddRange(new object[] {
-            "Admin",
-            "Thu Ngân",
-            "Chăm Sóc Khách Hàng"});
-            this.cboBaoHanh.Location = new System.Drawing.Point(940, 119);
-            this.cboBaoHanh.Name = "cboBaoHanh";
-            this.cboBaoHanh.Size = new System.Drawing.Size(117, 30);
-            this.cboBaoHanh.TabIndex = 15;
             // 
             // lblXuatXu
             // 
             this.lblXuatXu.AutoSize = true;
-            this.lblXuatXu.Font = new System.Drawing.Font("SVN-Beast", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblXuatXu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblXuatXu.ForeColor = System.Drawing.Color.White;
             this.lblXuatXu.Location = new System.Drawing.Point(566, 177);
             this.lblXuatXu.Name = "lblXuatXu";
-            this.lblXuatXu.Size = new System.Drawing.Size(74, 23);
+            this.lblXuatXu.Size = new System.Drawing.Size(71, 20);
             this.lblXuatXu.TabIndex = 12;
             this.lblXuatXu.Text = "Xuất xứ :";
             // 
             // lblBaoHanh
             // 
             this.lblBaoHanh.AutoSize = true;
-            this.lblBaoHanh.Font = new System.Drawing.Font("SVN-Beast", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBaoHanh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBaoHanh.ForeColor = System.Drawing.Color.White;
-            this.lblBaoHanh.Location = new System.Drawing.Point(849, 121);
+            this.lblBaoHanh.Location = new System.Drawing.Point(827, 123);
             this.lblBaoHanh.Name = "lblBaoHanh";
-            this.lblBaoHanh.Size = new System.Drawing.Size(85, 23);
+            this.lblBaoHanh.Size = new System.Drawing.Size(86, 20);
             this.lblBaoHanh.TabIndex = 12;
             this.lblBaoHanh.Text = "Bảo hành :";
             // 
@@ -438,7 +362,7 @@
             this.cboLoai.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
             this.cboLoai.Enabled = false;
             this.cboLoai.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cboLoai.Font = new System.Drawing.Font("SVN-Beast", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboLoai.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboLoai.ForeColor = System.Drawing.Color.White;
             this.cboLoai.FormattingEnabled = true;
             this.cboLoai.Items.AddRange(new object[] {
@@ -447,27 +371,27 @@
             "Chăm Sóc Khách Hàng"});
             this.cboLoai.Location = new System.Drawing.Point(901, 58);
             this.cboLoai.Name = "cboLoai";
-            this.cboLoai.Size = new System.Drawing.Size(156, 30);
+            this.cboLoai.Size = new System.Drawing.Size(156, 26);
             this.cboLoai.TabIndex = 15;
             // 
             // bunifuCustomLabel3
             // 
             this.bunifuCustomLabel3.AutoSize = true;
-            this.bunifuCustomLabel3.Font = new System.Drawing.Font("SVN-Beast", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel3.ForeColor = System.Drawing.Color.White;
             this.bunifuCustomLabel3.Location = new System.Drawing.Point(849, 60);
             this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
-            this.bunifuCustomLabel3.Size = new System.Drawing.Size(46, 23);
+            this.bunifuCustomLabel3.Size = new System.Drawing.Size(47, 20);
             this.bunifuCustomLabel3.TabIndex = 12;
             this.bunifuCustomLabel3.Text = "Loại :";
             // 
             // dtpNgayNhap
             // 
-            this.dtpNgayNhap.EditValue = new System.DateTime(2020, 5, 8, 23, 51, 32, 0);
+            this.dtpNgayNhap.EditValue = new System.DateTime(2020, 6, 7, 23, 51, 32, 0);
             this.dtpNgayNhap.Enabled = false;
             this.dtpNgayNhap.Location = new System.Drawing.Point(670, 58);
             this.dtpNgayNhap.Name = "dtpNgayNhap";
-            this.dtpNgayNhap.Properties.Appearance.Font = new System.Drawing.Font("SVN-Beast", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpNgayNhap.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpNgayNhap.Properties.Appearance.Options.UseFont = true;
             this.dtpNgayNhap.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -475,17 +399,17 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.dtpNgayNhap.Properties.DisplayFormat.FormatString = "dd/MM/yyyy";
             this.dtpNgayNhap.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
-            this.dtpNgayNhap.Size = new System.Drawing.Size(138, 28);
+            this.dtpNgayNhap.Size = new System.Drawing.Size(138, 24);
             this.dtpNgayNhap.TabIndex = 14;
             // 
             // bunifuCustomLabel2
             // 
             this.bunifuCustomLabel2.AutoSize = true;
-            this.bunifuCustomLabel2.Font = new System.Drawing.Font("SVN-Beast", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel2.ForeColor = System.Drawing.Color.White;
             this.bunifuCustomLabel2.Location = new System.Drawing.Point(566, 60);
             this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
-            this.bunifuCustomLabel2.Size = new System.Drawing.Size(98, 23);
+            this.bunifuCustomLabel2.Size = new System.Drawing.Size(93, 20);
             this.bunifuCustomLabel2.TabIndex = 12;
             this.bunifuCustomLabel2.Text = "Ngày nhập :";
             // 
@@ -498,7 +422,7 @@
             this.txtTenSP.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtTenSP.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtTenSP.Enabled = false;
-            this.txtTenSP.Font = new System.Drawing.Font("SVN-Beast", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTenSP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTenSP.ForeColor = System.Drawing.Color.Silver;
             this.txtTenSP.isPassword = false;
             this.txtTenSP.Location = new System.Drawing.Point(387, 60);
@@ -512,11 +436,11 @@
             // lblTenSP
             // 
             this.lblTenSP.AutoSize = true;
-            this.lblTenSP.Font = new System.Drawing.Font("SVN-Beast", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTenSP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTenSP.ForeColor = System.Drawing.Color.White;
             this.lblTenSP.Location = new System.Drawing.Point(267, 60);
             this.lblTenSP.Name = "lblTenSP";
-            this.lblTenSP.Size = new System.Drawing.Size(120, 23);
+            this.lblTenSP.Size = new System.Drawing.Size(118, 20);
             this.lblTenSP.TabIndex = 12;
             this.lblTenSP.Text = "Tên sản phẩm :";
             // 
@@ -529,7 +453,7 @@
             this.txtGiaBan.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtGiaBan.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtGiaBan.Enabled = false;
-            this.txtGiaBan.Font = new System.Drawing.Font("SVN-Beast", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtGiaBan.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGiaBan.ForeColor = System.Drawing.Color.Silver;
             this.txtGiaBan.isPassword = false;
             this.txtGiaBan.Location = new System.Drawing.Point(670, 118);
@@ -549,7 +473,7 @@
             this.txtGiaGoc.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtGiaGoc.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtGiaGoc.Enabled = false;
-            this.txtGiaGoc.Font = new System.Drawing.Font("SVN-Beast", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtGiaGoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGiaGoc.ForeColor = System.Drawing.Color.Silver;
             this.txtGiaGoc.isPassword = false;
             this.txtGiaGoc.Location = new System.Drawing.Point(387, 118);
@@ -563,11 +487,11 @@
             // lblGiaBan
             // 
             this.lblGiaBan.AutoSize = true;
-            this.lblGiaBan.Font = new System.Drawing.Font("SVN-Beast", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGiaBan.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGiaBan.ForeColor = System.Drawing.Color.White;
             this.lblGiaBan.Location = new System.Drawing.Point(566, 120);
             this.lblGiaBan.Name = "lblGiaBan";
-            this.lblGiaBan.Size = new System.Drawing.Size(75, 23);
+            this.lblGiaBan.Size = new System.Drawing.Size(73, 20);
             this.lblGiaBan.TabIndex = 12;
             this.lblGiaBan.Text = "Giá bán :";
             // 
@@ -580,7 +504,7 @@
             this.txtMaSP.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtMaSP.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtMaSP.Enabled = false;
-            this.txtMaSP.Font = new System.Drawing.Font("SVN-Beast", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMaSP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMaSP.ForeColor = System.Drawing.Color.Silver;
             this.txtMaSP.isPassword = false;
             this.txtMaSP.Location = new System.Drawing.Point(130, 60);
@@ -594,44 +518,44 @@
             // lblKhuyenMai
             // 
             this.lblKhuyenMai.AutoSize = true;
-            this.lblKhuyenMai.Font = new System.Drawing.Font("SVN-Beast", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblKhuyenMai.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblKhuyenMai.ForeColor = System.Drawing.Color.White;
             this.lblKhuyenMai.Location = new System.Drawing.Point(267, 177);
             this.lblKhuyenMai.Name = "lblKhuyenMai";
-            this.lblKhuyenMai.Size = new System.Drawing.Size(101, 23);
+            this.lblKhuyenMai.Size = new System.Drawing.Size(99, 20);
             this.lblKhuyenMai.TabIndex = 12;
             this.lblKhuyenMai.Text = "Khuyến mãi :";
             // 
             // lblGiaGoc
             // 
             this.lblGiaGoc.AutoSize = true;
-            this.lblGiaGoc.Font = new System.Drawing.Font("SVN-Beast", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGiaGoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGiaGoc.ForeColor = System.Drawing.Color.White;
             this.lblGiaGoc.Location = new System.Drawing.Point(267, 120);
             this.lblGiaGoc.Name = "lblGiaGoc";
-            this.lblGiaGoc.Size = new System.Drawing.Size(76, 23);
+            this.lblGiaGoc.Size = new System.Drawing.Size(72, 20);
             this.lblGiaGoc.TabIndex = 12;
             this.lblGiaGoc.Text = "Giá gốc :";
             // 
             // lblSoLuong
             // 
             this.lblSoLuong.AutoSize = true;
-            this.lblSoLuong.Font = new System.Drawing.Font("SVN-Beast", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSoLuong.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSoLuong.ForeColor = System.Drawing.Color.White;
             this.lblSoLuong.Location = new System.Drawing.Point(10, 121);
             this.lblSoLuong.Name = "lblSoLuong";
-            this.lblSoLuong.Size = new System.Drawing.Size(80, 23);
+            this.lblSoLuong.Size = new System.Drawing.Size(80, 20);
             this.lblSoLuong.TabIndex = 12;
             this.lblSoLuong.Text = "Số lượng :";
             // 
             // lblMaSP
             // 
             this.lblMaSP.AutoSize = true;
-            this.lblMaSP.Font = new System.Drawing.Font("SVN-Beast", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMaSP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMaSP.ForeColor = System.Drawing.Color.White;
             this.lblMaSP.Location = new System.Drawing.Point(10, 60);
             this.lblMaSP.Name = "lblMaSP";
-            this.lblMaSP.Size = new System.Drawing.Size(116, 23);
+            this.lblMaSP.Size = new System.Drawing.Size(113, 20);
             this.lblMaSP.TabIndex = 12;
             this.lblMaSP.Text = "Mã sản phẩm :";
             // 
@@ -646,7 +570,7 @@
             this.btnLuuCapNhat.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnLuuCapNhat.BackgroundImage")));
             this.btnLuuCapNhat.ButtonText = "Lưu cập nhật";
             this.btnLuuCapNhat.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLuuCapNhat.Font = new System.Drawing.Font("SVN-Beast", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLuuCapNhat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLuuCapNhat.ForeColor = System.Drawing.Color.White;
             this.btnLuuCapNhat.IdleBorderThickness = 1;
             this.btnLuuCapNhat.IdleCornerRadius = 1;
@@ -675,11 +599,11 @@
             // lblThongTinSPBanner
             // 
             this.lblThongTinSPBanner.AutoSize = true;
-            this.lblThongTinSPBanner.Font = new System.Drawing.Font("SVN-Beast", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblThongTinSPBanner.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblThongTinSPBanner.ForeColor = System.Drawing.Color.White;
             this.lblThongTinSPBanner.Location = new System.Drawing.Point(432, 6);
             this.lblThongTinSPBanner.Name = "lblThongTinSPBanner";
-            this.lblThongTinSPBanner.Size = new System.Drawing.Size(148, 23);
+            this.lblThongTinSPBanner.Size = new System.Drawing.Size(149, 20);
             this.lblThongTinSPBanner.TabIndex = 0;
             this.lblThongTinSPBanner.Text = "Thông tin sản phẩm";
             // 
@@ -694,7 +618,7 @@
             this.btnCapNhat.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCapNhat.BackgroundImage")));
             this.btnCapNhat.ButtonText = "Cập nhật";
             this.btnCapNhat.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCapNhat.Font = new System.Drawing.Font("SVN-Beast", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCapNhat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCapNhat.ForeColor = System.Drawing.Color.White;
             this.btnCapNhat.IdleBorderThickness = 1;
             this.btnCapNhat.IdleCornerRadius = 1;
@@ -720,7 +644,7 @@
             this.btnXoa.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnXoa.BackgroundImage")));
             this.btnXoa.ButtonText = "Xóa";
             this.btnXoa.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnXoa.Font = new System.Drawing.Font("SVN-Beast", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXoa.ForeColor = System.Drawing.Color.White;
             this.btnXoa.IdleBorderThickness = 1;
             this.btnXoa.IdleCornerRadius = 1;
@@ -745,7 +669,7 @@
             this.btnNhapHang.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnNhapHang.BackgroundImage")));
             this.btnNhapHang.ButtonText = "Nhập hàng";
             this.btnNhapHang.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnNhapHang.Font = new System.Drawing.Font("SVN-Beast", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNhapHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNhapHang.ForeColor = System.Drawing.Color.White;
             this.btnNhapHang.IdleBorderThickness = 1;
             this.btnNhapHang.IdleCornerRadius = 1;
@@ -768,7 +692,7 @@
             this.txtTimKiemNhanh.BorderThickness = 2;
             this.txtTimKiemNhanh.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtTimKiemNhanh.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtTimKiemNhanh.Font = new System.Drawing.Font("SVN-Beast", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTimKiemNhanh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTimKiemNhanh.ForeColor = System.Drawing.Color.Silver;
             this.txtTimKiemNhanh.isPassword = false;
             this.txtTimKiemNhanh.Location = new System.Drawing.Point(380, 65);
@@ -782,13 +706,138 @@
             // lblTimKiemNhanh
             // 
             this.lblTimKiemNhanh.AutoSize = true;
-            this.lblTimKiemNhanh.Font = new System.Drawing.Font("SVN-Beast", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTimKiemNhanh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTimKiemNhanh.ForeColor = System.Drawing.Color.White;
             this.lblTimKiemNhanh.Location = new System.Drawing.Point(252, 65);
             this.lblTimKiemNhanh.Name = "lblTimKiemNhanh";
-            this.lblTimKiemNhanh.Size = new System.Drawing.Size(128, 23);
+            this.lblTimKiemNhanh.Size = new System.Drawing.Size(128, 20);
             this.lblTimKiemNhanh.TabIndex = 26;
             this.lblTimKiemNhanh.Text = "Tìm kiếm nhanh :";
+            // 
+            // colMaSP
+            // 
+            this.colMaSP.DataPropertyName = "MaSP";
+            this.colMaSP.HeaderText = "Mã SP";
+            this.colMaSP.Name = "colMaSP";
+            this.colMaSP.ReadOnly = true;
+            // 
+            // colTenSP
+            // 
+            this.colTenSP.DataPropertyName = "TenSP";
+            this.colTenSP.HeaderText = "Tên SP";
+            this.colTenSP.Name = "colTenSP";
+            this.colTenSP.ReadOnly = true;
+            // 
+            // colLoai
+            // 
+            this.colLoai.DataPropertyName = "LoaiSP";
+            this.colLoai.HeaderText = "Loại";
+            this.colLoai.Name = "colLoai";
+            this.colLoai.ReadOnly = true;
+            // 
+            // colGiaGoc
+            // 
+            this.colGiaGoc.DataPropertyName = "GiaGoc";
+            this.colGiaGoc.HeaderText = "Giá gốc";
+            this.colGiaGoc.Name = "colGiaGoc";
+            this.colGiaGoc.ReadOnly = true;
+            // 
+            // colGiaBan
+            // 
+            this.colGiaBan.DataPropertyName = "GiaBan";
+            this.colGiaBan.HeaderText = "Giá bán";
+            this.colGiaBan.Name = "colGiaBan";
+            this.colGiaBan.ReadOnly = true;
+            // 
+            // colSoLuongTon
+            // 
+            this.colSoLuongTon.DataPropertyName = "SLT";
+            this.colSoLuongTon.HeaderText = "SL tồn";
+            this.colSoLuongTon.Name = "colSoLuongTon";
+            this.colSoLuongTon.ReadOnly = true;
+            // 
+            // colBaoHanh
+            // 
+            this.colBaoHanh.DataPropertyName = "BaoHanh";
+            this.colBaoHanh.HeaderText = "Bảo hành";
+            this.colBaoHanh.Name = "colBaoHanh";
+            this.colBaoHanh.ReadOnly = true;
+            // 
+            // colKhuyenMai
+            // 
+            this.colKhuyenMai.DataPropertyName = "KM";
+            this.colKhuyenMai.HeaderText = "KM (%)";
+            this.colKhuyenMai.Name = "colKhuyenMai";
+            this.colKhuyenMai.ReadOnly = true;
+            // 
+            // colMaNCC
+            // 
+            this.colMaNCC.DataPropertyName = "MaNCC";
+            this.colMaNCC.HeaderText = "Mã NCC";
+            this.colMaNCC.Name = "colMaNCC";
+            this.colMaNCC.ReadOnly = true;
+            // 
+            // colXuatXu
+            // 
+            this.colXuatXu.DataPropertyName = "XuatXu";
+            this.colXuatXu.HeaderText = "Xuất xứ";
+            this.colXuatXu.Name = "colXuatXu";
+            this.colXuatXu.ReadOnly = true;
+            // 
+            // colNgayNhap
+            // 
+            this.colNgayNhap.DataPropertyName = "NgayNhap";
+            this.colNgayNhap.HeaderText = "Ngày nhập";
+            this.colNgayNhap.Name = "colNgayNhap";
+            this.colNgayNhap.ReadOnly = true;
+            // 
+            // dtpBaoHanh
+            // 
+            this.dtpBaoHanh.EditValue = new System.DateTime(2020, 6, 7, 23, 51, 32, 0);
+            this.dtpBaoHanh.Enabled = false;
+            this.dtpBaoHanh.Location = new System.Drawing.Point(919, 119);
+            this.dtpBaoHanh.Name = "dtpBaoHanh";
+            this.dtpBaoHanh.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpBaoHanh.Properties.Appearance.Options.UseFont = true;
+            this.dtpBaoHanh.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dtpBaoHanh.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dtpBaoHanh.Properties.DisplayFormat.FormatString = "dd/MM/yyyy";
+            this.dtpBaoHanh.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.dtpBaoHanh.Size = new System.Drawing.Size(138, 24);
+            this.dtpBaoHanh.TabIndex = 14;
+            // 
+            // bunifuCustomLabel1
+            // 
+            this.bunifuCustomLabel1.AutoSize = true;
+            this.bunifuCustomLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.White;
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(12, 176);
+            this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(111, 20);
+            this.bunifuCustomLabel1.TabIndex = 12;
+            this.bunifuCustomLabel1.Text = "Nhà cung cấp:";
+            // 
+            // txtMaNCC
+            // 
+            this.txtMaNCC.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
+            this.txtMaNCC.BorderColorIdle = System.Drawing.Color.Gray;
+            this.txtMaNCC.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
+            this.txtMaNCC.BorderThickness = 2;
+            this.txtMaNCC.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtMaNCC.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtMaNCC.Enabled = false;
+            this.txtMaNCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMaNCC.ForeColor = System.Drawing.Color.Silver;
+            this.txtMaNCC.isPassword = false;
+            this.txtMaNCC.Location = new System.Drawing.Point(130, 170);
+            this.txtMaNCC.Margin = new System.Windows.Forms.Padding(4);
+            this.txtMaNCC.MaxLength = 32767;
+            this.txtMaNCC.Name = "txtMaNCC";
+            this.txtMaNCC.Size = new System.Drawing.Size(85, 28);
+            this.txtMaNCC.TabIndex = 13;
+            this.txtMaNCC.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // frmQuanLySanPham
             // 
@@ -798,7 +847,7 @@
             this.ClientSize = new System.Drawing.Size(1290, 710);
             this.Controls.Add(this.txtTimKiemNhanh);
             this.Controls.Add(this.lblTimKiemNhanh);
-            this.Controls.Add(this.panelThongTinSanPham);
+            this.Controls.Add(this.panel);
             this.Controls.Add(this.dgvDanhSachSP);
             this.Controls.Add(this.panelDanhMucSP);
             this.Controls.Add(this.lblBannerSanPham);
@@ -806,18 +855,21 @@
             this.Name = "frmQuanLySanPham";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmQuanLySanPham";
+            this.Load += new System.EventHandler(this.frmQuanLySanPham_Load);
             this.panelDanhMucSP.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDanhSachSP)).EndInit();
-            this.panelThongTinSanPham.ResumeLayout(false);
-            this.panelThongTinSanPham.PerformLayout();
+            this.panel.ResumeLayout(false);
+            this.panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericKhuyenMai.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericSoLuong.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtpNgayNhap.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtpNgayNhap.Properties)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtpBaoHanh.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtpBaoHanh.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -832,18 +884,7 @@
         private Bunifu.Framework.UI.BunifuCustomLabel lblDanhMucSanPham;
         private System.Windows.Forms.ListView lvwDanhMucSanPham;
         private Bunifu.Framework.UI.BunifuCustomDataGrid dgvDanhSachSP;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colMaSP;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colTenSP;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colLoai;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colNgayNhap;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colBaoHanh;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colXuatXu;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colSoLuongTon;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colGiaBan;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colGiaGoc;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colKhuyenMai;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colMaNCC;
-        private System.Windows.Forms.Panel panelThongTinSanPham;
+        private System.Windows.Forms.Panel panel;
         private System.Windows.Forms.Panel panel1;
         private Bunifu.Framework.UI.BunifuCustomLabel lblThongTinSPBanner;
         private Bunifu.Framework.UI.BunifuMetroTextbox txtTimKiemNhanh;
@@ -851,7 +892,6 @@
         private DevExpress.XtraEditors.SpinEdit numericKhuyenMai;
         private DevExpress.XtraEditors.SpinEdit numericSoLuong;
         private System.Windows.Forms.ComboBox cboXuatXu;
-        private System.Windows.Forms.ComboBox cboBaoHanh;
         private Bunifu.Framework.UI.BunifuCustomLabel lblXuatXu;
         private Bunifu.Framework.UI.BunifuCustomLabel lblBaoHanh;
         private System.Windows.Forms.ComboBox cboLoai;
@@ -872,5 +912,19 @@
         private Bunifu.Framework.UI.BunifuThinButton2 btnCapNhat;
         private Bunifu.Framework.UI.BunifuThinButton2 btnXoa;
         private Bunifu.Framework.UI.BunifuThinButton2 btnNhapHang;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colMaSP;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colTenSP;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colLoai;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colGiaGoc;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colGiaBan;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colSoLuongTon;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colBaoHanh;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colKhuyenMai;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colMaNCC;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colXuatXu;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colNgayNhap;
+        private DevExpress.XtraEditors.DateEdit dtpBaoHanh;
+        private Bunifu.Framework.UI.BunifuMetroTextbox txtMaNCC;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
     }
 }
